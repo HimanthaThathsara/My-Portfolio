@@ -565,6 +565,10 @@ font-family: "Bai Jamjuree", system-ui;
   margin-bottom: 25px;
 }
 
+.let-me-talk-a{
+  text-decoration: none;
+}
+
 #container-6 > .button-email{
   justify-content: center;
   align-items: center;
