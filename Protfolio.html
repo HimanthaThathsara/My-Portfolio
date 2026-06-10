@@ -154,9 +154,17 @@
                 </div>
                 <div class="globe">
                   <div id="globe">
+                    <script type="importmap">
+                      {
+                        "imports": {
+                          "three": "https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.module.js",
+                          "three/": "https://cdn.jsdelivr.net/npm/three@0.134.0/"
+                        }
+                      }
+                    </script>
                     <script type="module">
-                      import * as THREE from "https://cdn.skypack.dev/three@0.134.0";
-                      import OrbitControls from "https://cdn.skypack.dev/orbit-controls-es6@2.0.1";
+                      import * as THREE from "three";
+                      import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
                       const
                         globe_map_url = "https://github.githubassets.com/images/modules/site/home/globe/map.png",
